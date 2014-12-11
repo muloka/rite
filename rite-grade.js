@@ -3,8 +3,8 @@ var commander = require('commander'),
     colors    = require('colors'),
     Table     = require('cli-table'),
     oauth     = require('./lib/oauth'),
-    urls      = require('./rite-urls')
-    config    = require('./rite-config')
+    urls      = require('./rite-urls'),
+    config    = require(process.env.HOME + '/rite-config.json')
 
 commander.parse(process.argv)
 

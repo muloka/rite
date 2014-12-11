@@ -13,7 +13,7 @@ API Documentation: [http://docs.ritetag.apiary.io/](http://docs.ritetag.apiary.i
 
 Obtain free API keys from [https://ritetag.com/developer/dashboard](https://ritetag.com/developer/dashboard)
 
-Then save keys in `rite-config.json`
+Then save keys in `rite-config.json` and place it in your home folder.
 
 
 #### API Limits
@@ -61,6 +61,7 @@ Then save keys in `rite-config.json`
 ### Doest not yet support (todo)
 
 - Testing
+- Generate sample rite-config.json file in your home folder
 - Hashtags for a given url
 - Grade a tweet
 - Alternative output formats

@@ -2,8 +2,8 @@ var async     = require('async'),
     colors    = require('colors'),
     Table     = require('cli-table'),
     oauth     = require('./lib/oauth'),
-    urls      = require('./rite-urls')
-    config    = require('./rite-config')
+    urls      = require('./rite-urls'),
+    config    = require(process.env.HOME + '/rite-config.json')
 
 isnull = function (original_value, default_value) {
   return String(original_value).replace('null', default_value)
