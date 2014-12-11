@@ -1,0 +1,9 @@
+{
+  "base": "http://ritetag.com/api/v2",
+  "hashtag_directory": "/ai/twitter/",
+  "trending_hashtags": "/trending-hashtags/",
+  "hashtags_for_url": "/hashtagsforurl?url=",
+  "influencers_for_hashtag": "/influencers-for-hashtag/",
+  "historical_data": "/historical-data/",
+  "tweet_grader": "/ai/tweetgrader/"
+}
