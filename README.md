@@ -5,7 +5,7 @@ Rite: CLI for Ritetag API
 
 Uses [RiteTag API](http://ritetag.com/rest-api) to get lists of similar hashtags & their viral potential.
 
-Ritetag has can show you which hashtags are most likely to get picked up & amplify your content.
+Ritetag can show you which hashtags are most likely to get picked up & amplify your content.
 
 This work was inspired by [Neal Shyam](https://github.com/nealrs) on [Ritehash](https://github.com/nealrs/ritehash)
 
