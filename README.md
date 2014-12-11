@@ -1,6 +1,8 @@
 Rite: CLI for Ritetag API
 =========================
 
+[![NPM](https://nodei.co/npm/rite.png?downloads=true)](https://nodei.co/npm/rite/)
+
 Uses [RiteTag API](http://ritetag.com/rest-api) to get lists of similar hashtags & their viral potential.
 
 Ritetag has can show you which hashtags are most likely to get picked up & amplify your content.
@@ -13,8 +15,14 @@ API Documentation: [http://docs.ritetag.apiary.io/](http://docs.ritetag.apiary.i
 
 Obtain free API keys from [https://ritetag.com/developer/dashboard](https://ritetag.com/developer/dashboard)
 
-Then save keys in `rite-config.json` and place it in your home folder.
+Using this as a template save keys in `rite-config.json` and place it in your home folder.
 
+    {
+      "consumer_key":    "??????",
+      "consumer_secret": "??????",
+      "token":           "??????",
+      "token_secret":    "??????"
+    }
 
 #### API Limits
 
@@ -47,7 +55,6 @@ Then save keys in `rite-config.json` and place it in your home folder.
       -h, --help     output usage information
       -V, --version  output the version number
 
-
 ### Glossary
 
 - **tag:** name of the associated hashtag
@@ -64,7 +71,7 @@ Then save keys in `rite-config.json` and place it in your home folder.
 - Generate sample rite-config.json file in your home folder
 - Hashtags for a given url
 - Grade a tweet
-- Alternative output formats
+- Alternative output formats (json, csv)
 
 ### License
 

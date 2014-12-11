@@ -1,18 +1,37 @@
 #!/usr/bin/env node
-var commander = require('commander')
+var ycommands   = require('ycommands')
 
-commander
-  .version('1.0.2')
-  .usage('[options]')
-  .command("directory [query]", "Returns an array of up to 10 hashtags most frequently used in tweets containing your query")
-  .command("trending", "Returns trending hashtags ")
-  // .command("url [url]", "Returns hashtags for a given url")
-  .command("influencers [hashtag]", "Returns influencers on twitter for a given hashtag")
-  .command("history [hashtag]", "Returns historical data for a given hashtag")
-  // .command("grade [tweet]", "Grades the quality of the tweet.")
-  // .option('-c, --config [json_file]', 'Specify configuration file [json]', 'rite-config.json')
-  .parse(process.argv)
+var directory   = require('./lib/directory')
+var trending    = require('./lib/trending')
+var influencers = require('./lib/influencers')
+var history     = require('./lib/history')
 
-if (commander.args.length === 0) {
-  commander.help()
-}
+ycommands
+  .usage("CLI for Ritetag API\n===================\n\nUsage:\n  rite command")
+  .help('help')
+  .command(
+    "directory [query]", 
+    "Returns an array of up to 10 hashtags most frequently used in tweets containing your query", 
+    directory
+  )
+  .command(
+    "trending",
+    "Returns trending hashtags ",
+    trending
+  )
+  .command(
+    "influencers [hashtag]",
+    "Returns influencers on twitter for a given hashtag",
+    influencers
+  )
+  .command(
+    "history [hashtag]",
+    "Returns historical data for a given hashtag",
+    history
+  )
+  // .nocommand("List all config keys", function(argv, callback) { 
+  //   return callback() 
+  // })
+  .execute(function(err) {
+    if (err) { console.error(err.toString()) }
+  })
