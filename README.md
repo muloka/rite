@@ -40,20 +40,17 @@ Using this as a template save keys in `rite-config.json` and place it in your ho
 
 ### Usage
 
-    rite [options]
+      rite command
+
+    Options:
+      --help  Show help
 
     Commands:
-
       directory [query]      Returns an array of up to 10 hashtags most frequently used in tweets containing your query
       trending               Returns trending hashtags
       influencers [hashtag]  Returns influencers on twitter for a given hashtag
       history [hashtag]      Returns historical data for a given hashtag
-      help [cmd]             display help for [cmd]
 
-    Options:
-
-      -h, --help     output usage information
-      -V, --version  output the version number
 
 ### Glossary
 
