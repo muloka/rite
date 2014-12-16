@@ -15,8 +15,8 @@ ycommands
     directory
   )
   .command(
-    "trending",
-    "Returns trending hashtags ",
+    "trending [green, optional]",
+    "Returns trending hashtags. Include the word green if you only want green hashtags.",
     trending
   )
   .command(
