@@ -1,6 +1,6 @@
 {
   "name": "rite",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "CLI for Ritetag API to get lists of similar hashtags & their viral potential on Twitter.",
   "main": "rite.js",
   "scripts": {

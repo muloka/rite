@@ -46,10 +46,10 @@ Using this as a template save keys in `rite-config.json` and place it in your ho
       --help  Show help
 
     Commands:
-      directory [query]      Returns an array of up to 10 hashtags most frequently used in tweets containing your query
-      trending               Returns trending hashtags
-      influencers [hashtag]  Returns influencers on twitter for a given hashtag
-      history [hashtag]      Returns historical data for a given hashtag
+      directory [query]           Returns an array of up to 10 hashtags most frequently used in tweets containing your query
+      trending [green, optional]  Returns trending hashtags. Include the word green if you only want green hashtags.
+      influencers [hashtag]       Returns influencers on twitter for a given hashtag
+      history [hashtag]           Returns historical data for a given hashtag
 
 
 ### Glossary
